@@ -1,0 +1,5 @@
+fonts:
+league spartan
+fredoka
+itc bauhaus
+agbalumo
