@@ -59,12 +59,10 @@ const App = () => {
   }, [cartItems]);
 
   useEffect(() => {
-    const handler = () => onSendData(); // Stable reference
+    telegram.onEvent("mainButtonClicked", onSendData);
 
-    telegram.onEvent("mainButtonClicked", handler);
-
-    return () => telegram.offEvent("mainButtonClicked", handler);
-  });
+    return () => telegram.offEvent("mainButtonClicked", onSendData);
+  }, [onSendData]);
 
   return (
     <>
