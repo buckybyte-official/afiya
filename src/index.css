@@ -18,3 +18,28 @@
     flex-direction: row;
     justify-content: center;
 }
+/* Ensure the header background covers the top */
+.headbg {
+    width: 100%; /* Cover the full width */
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Send it behind other content */
+}
+
+/* Position the logo inside the header */
+.afiyalogo {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    width: 150px; /* Adjust logo size */
+    height: auto;
+    z-index: 1; /* Keep it above background */
+}
+
+/* Add padding to the body to prevent content from overlapping the header */
+body {
+    padding-top: 220px; /* Adjust based on header height */
+}
