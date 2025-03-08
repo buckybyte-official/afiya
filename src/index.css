@@ -32,12 +32,21 @@
 /* Position the logo inside the header */
 .afiyalogo {
     position: absolute;
-    top: 40px; /* Adjust as needed */
-    left: 185%; /* Adjust as needed */
-    width: 140px; /* Adjust logo size */
+    top: 60px; /* Distance from the top */
+    left: 7%; /* Keep it on the left side */
+    width: 10vw; /* Makes it responsive to screen width */
+    max-width: 120px; /* Prevents it from getting too big */
+    min-width: 60px; /* Ensures it doesn’t get too small */
     height: auto;
-    z-index: 1; /* Keep it above background */
+    z-index: 1;
     border-radius: 100%;
+}
+@media (max-width: 600px) {
+    .afiyalogo {
+        width: 50px; /* Set a smaller size */
+        left: 3%; /* Slightly adjust position */
+        top: 15px; /* Adjust vertical spacing */
+    }
 }
 
 /* Add padding to the body to prevent content from overlapping the header */
