@@ -50,12 +50,26 @@ const App = () => {
   };
 
   const onCheckout = () => {
-    telegram.MainButton.text = "Sotib olish :)";
+    telegram.MainButton.text = "Rasmiylashtirish :)";
     telegram.MainButton.show();
   };
 
   const onSendData = useCallback(() => {
-    telegram.sendData(JSON.stringify(cartItems));
+    const queryID = telegram.initDataUnsave?.query_id;
+
+    if (queryID) {
+      fetch("http://localhost:8000/web-data", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(cartItems),
+      });
+    } else {
+      telegram.sendData(
+        JSON.stringify({ products: cartItems, queryID: queryID }),
+      );
+    }
   }, [cartItems]);
 
   useEffect(() => {

@@ -14,7 +14,7 @@ const Cart = ({ cartItems, onCheckout }) => {
         so'm
       </p>
       <Button
-        title={`${cartItems.length === 0 ? "Buyurtma berish" : "To'lov"}`}
+        title={`${cartItems.length === 0 ? "Buyurtma Berish" : "Buyurtma Berish"}`}
         disable={cartItems.length === 0 ? true : false}
         type={"checkout"}
         onClick={onCheckout}

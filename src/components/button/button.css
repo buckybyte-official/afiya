@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #e0c521;
+    --primary-color: #067d44;
 }
 
 .btn {
@@ -16,27 +16,27 @@
 }
 
 .btn.add {
-    background-color: var(--primary-color);
+    background-color: #28b463;
 }
 
 .btn.add:hover {
-    background-color: #cab320;
+    background-color: #239b56;
 }
 
 .btn.add:active {
-    background-color: #ad9a1c;
+    background-color: #1d8348;
 }
 
 .btn.remove {
-    background-color: tomato;
+    background-color: #cb4335;
 }
 
 .btn.remove:hover {
-    background-color: rgb(209, 83, 61);
+    background-color: #cb4335;
 }
 
 .btn.remove:active {
-    background-color: rgb(185, 73, 54);
+    background-color: #943126;
 }
 
 .btn.checkout {

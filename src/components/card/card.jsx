@@ -27,7 +27,7 @@ const Card = (props) => {
           src={products.image}
           alt={products.title}
           width={"100%"}
-          height={"300px"}
+          height={"200px"}
         />
       </div>
       <div className="card__body">
