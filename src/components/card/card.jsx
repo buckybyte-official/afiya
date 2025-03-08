@@ -22,7 +22,7 @@ const Card = (props) => {
         {count}
       </span>
 
-      <div className="image_container">
+      <div className="image__container">
         <img src={products.image} alt={products.title} />
       </div>
       <div className="card__body">

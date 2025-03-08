@@ -23,6 +23,26 @@
     transition: transform 0.2s ease-in-out;
 }
 
+.image__container img {
+    width: 100%; /* Always fits the container */
+    height: 120px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures image fills the area without distortion */
+    border-radius: 6px; /* Rounded corners for better design */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .image__container img {
+        height: 110px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image__container img {
+        height: 100px;
+    }
+}
+
 /* Card hover effect */
 .card:hover {
     transform: scale(1.05);
