@@ -23,12 +23,7 @@ const Card = (props) => {
       </span>
 
       <div className="image_container">
-        <img
-          src={products.image}
-          alt={products.title}
-          width={"100%"}
-          height={"200px"}
-        />
+        <img src={products.image} alt={products.title} />
       </div>
       <div className="card__body">
         <h2 className="card__title">{products.title}</h2>
