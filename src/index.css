@@ -51,5 +51,5 @@
 
 /* Add padding to the body to prevent content from overlapping the header */
 body {
-    padding-top: 45px; /* Adjust based on header height */
+    padding-top: 30px; /* Adjust based on header height */
 }
