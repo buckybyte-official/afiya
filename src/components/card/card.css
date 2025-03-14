@@ -37,13 +37,13 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .image__container img {
-        height: 120px;
+        height: 160px;
     }
 }
 
 @media (max-width: 480px) {
     .image__container img {
-        height: 100px;
+        height: 140px;
     }
 }
 

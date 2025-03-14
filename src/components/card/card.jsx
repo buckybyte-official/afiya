@@ -4,16 +4,16 @@ import { useState } from "react";
 
 const Card = (props) => {
   const [count, setCount] = useState(0);
-  const { products, onAddItem, onRemoveItem } = props;
+  const { product, onAddItem, onRemoveItem } = props; // Changed prop name to singular
 
   const handleIncrement = () => {
     setCount((prev) => prev + 1);
-    onAddItem(products);
+    onAddItem(product); // Pass the single product object
   };
 
   const handleDecrement = () => {
     setCount((prev) => prev - 1);
-    onRemoveItem(products);
+    onRemoveItem(product); // Pass the single product object
   };
 
   return (
@@ -23,12 +23,12 @@ const Card = (props) => {
       </span>
 
       <div className="image__container">
-        <img src={products.image} alt={products.title} />
+        <img src={product.image} alt={product.title} />
       </div>
       <div className="card__body">
-        <h2 className="card__title">{products.title}</h2>
+        <h2 className="card__title">{product.title}</h2>
         <div className="card__price">
-          {products.price.toLocaleString("en-US", {
+          {product.price.toLocaleString("en-US", {
             minimumFractionDigits: 0,
             maximumFractionDigits: 0,
           })}{" "}
