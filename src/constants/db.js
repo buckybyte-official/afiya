@@ -2,13 +2,13 @@ export function getData() {
   return [
     {
       title: "Pushti Nexx (Extra)",
-      price: 65000,
+      price: 70000,
       image: "/img/1.png",
       id: 1,
     },
     {
       title: "Ko'k Nexx (Extra)",
-      price: 65000,
+      price: 70000,
       image: "/img/2.png",
       id: 2,
     },
